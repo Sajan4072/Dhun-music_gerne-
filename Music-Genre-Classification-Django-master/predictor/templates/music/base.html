@@ -1,46 +1,44 @@
-<!DOCTYPE html>
-{% load static %}
+<!DOCTYPE html> {% load static %}
 <html lang="en">
+
 <head>
-	<title>Music Genre Classification</title>
-	<link rel="icon" href="{% static 'music/images/headphone.png' %}">
+    <title>Dhun</title>
+    <link rel="icon" href="{% static 'music/images/headphone.png' %}">
 </head>
 
 <body id="page-top">
 
-	  <!-- Preloader -->
-<div class="spinner-wrapper">
-      <div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
-      </div>
- </div>
-  <!-- end of preloader -->
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
 
-  {% include 'music/snippets/nav.html' %}
+    {% include 'music/snippets/nav.html' %}
 
-   <div class="content">
+    <div class="content">
 
-    {% block content %}
+        {% block content %}
 
-    <!-- content for different pages here -->
+        <!-- content for different pages here -->
 
-    {% endblock content %}
-  </div>
+        {% endblock content %}
+    </div>
 
 
-  {% include 'music/snippets/js.html' %}
+    {% include 'music/snippets/js.html' %}
 
 </body>
 <script>
-    $(document).ready(function(){
-        $('.up-input').change(function () {
+    $(document).ready(function() {
+        $('.up-input').change(function() {
             $('.up-p').text(this.files.length + " file(s) selected");
         });
     });
-
-    
 </script>
 <!-- Bootstrap core JavaScript -->
 

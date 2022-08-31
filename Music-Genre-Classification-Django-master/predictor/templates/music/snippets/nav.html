@@ -15,7 +15,9 @@
     <!-- Text Logo - Use this if you don't have a graphic logo -->
     <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
 
-    <a class="navbar-brand" style="text-decoration: none;" href="{% url 'predictor:index' %}"><font color="8ac6d1">MUSIC GENRE CLASSIFIER</font></a>
+    <a class="navbar-brand" style="text-decoration: none;" href="{% url 'predictor:index' %}">
+        <font color="8ac6d1">DHUN</font>
+    </a>
 
     <!-- Mobile Menu Toggle Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +36,17 @@
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="#statistics">STATISTICS</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="{% url 'predictor:blogs' %}">BLOGS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="{% url 'predictor:logout' %}">LOGOUT</a>
+            </li>
+            
+            
         </ul>
     </div>
 
-</nav> <!-- end of navbar -->
+</nav>
+<!-- end of navbar -->
 <!-- end of navbar -->
